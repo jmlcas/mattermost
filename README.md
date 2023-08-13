@@ -1,5 +1,5 @@
 # mattermost
-Mattermost -  - Docker compose
+Mattermost - Colaboración segura para equipos técnicos - Docker compose
 
 # Ejecutar estos comandos antes de instalar la app:
 mkdir -p /opt/docker/mattermost && cd /opt/docker/mattermost
