@@ -18,12 +18,12 @@ services:
     tmpfs: 
       - /tmp
     volumes: 
-      - "./mattermost/config:/mattermost/config:rw"
-      - "./mattermost/data:/mattermost/data:rw"
-      - "./mattermost/logs:/mattermost/logs:rw"
-      - "./mattermost/plugins:/mattermost/plugins:rw"
-      - "./mattermost/client/plugins:/mattermost/client/plugins:rw"
-      - "./mattermost/bleve-indexes:/mattermost/bleve-indexes:rw"
+      - "/opt/docker/docker_data/mattermost/config:/mattermost/config:rw"
+      - "/opt/docker/docker_data/mattermost/data:/mattermost/data:rw"
+      - "/opt/docker/docker_data/mattermost/logs:/mattermost/logs:rw"
+      - "/opt/docker/docker_data/mattermost/plugins:/mattermost/plugins:rw"
+      - "/opt/docker/docker_data/mattermost/client/plugins:/mattermost/client/plugins:rw"
+      - "/opt/docker/docker_data/mattermost/bleve-indexes:/mattermost/bleve-indexes:rw"
 
   postgres: 
     env_file: 
@@ -37,7 +37,7 @@ services:
     tmpfs: 
       - /tmp
     volumes: 
-      - "./postgresql/data:/var/lib/postgresql/data"
+      - "/opt/docker/docker_data/postgresql/data:/var/lib/postgresql/data"
       - "lock:/var/run/postgresql"
 
 volumes: 
