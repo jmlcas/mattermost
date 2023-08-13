@@ -7,6 +7,10 @@ mkdir -p /opt/docker/docker_data/postgresql/data && mkdir -p /opt/docker/docker_
 chmod -R 777 /opt/docker/docker_data/mattermost/config
 exit
 
+Ver en "localhost:8065"
+
+
+
 
 
 
