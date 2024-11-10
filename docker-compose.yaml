@@ -7,6 +7,10 @@ services:
       - postgres
     env_file: 
       - .env
+    environment:
+      - PUID=0   # default 1000  root=0
+      - PGID=0   # default 1000  root=0
+      - TZ=Europe/Berlin
     image: "mattermost/mattermost-team-edition:8.0"
     container_name: mattermost
     pids_limit: 200
